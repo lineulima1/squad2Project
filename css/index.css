@@ -1,0 +1,30 @@
+.background{
+    background: #ECEEF2;
+}
+.background-forms{
+    position: absolute;
+    width: 617px;
+    height: 763px;
+    background: #FFFFFF;
+    border-radius: 20px; 
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.title{
+    position: static;
+    width: 755px;
+    height: 24px;
+    left: 118px;
+    top: 15px;
+    font-family: 'Inter';
+    font-style: normal; 
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 56px 34px;
+}
