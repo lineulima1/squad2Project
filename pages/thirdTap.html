@@ -12,10 +12,34 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/thirdTap.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Third Tab</title>
   </head>
   <body>
     <header></header>
-    <main><form action=""></form></main>
+    <main>
+      <form action="">
+        <div class="box-input">
+          <p class="text-style">Certificates</p>
+          <div class="input-style box-certificate-input">
+            <input
+              type="text"
+              class="certificates-input"
+              placeholder="http://www.linkedin.com/in/foo-bar-3a0560104/"
+            />
+            <i data-feather="heart" class="heart"></i>
+          </div>
+          <div class="more">
+            <i data-feather="plus" class="plus"></i>More
+            <i data-feather="chevron-right" class="chevron-right"></i>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script>
+      feather.replace();
+    </script>
+    <script src="/js/thirdTap.js"></script>
   </body>
 </html>
