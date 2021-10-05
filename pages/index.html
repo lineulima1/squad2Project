@@ -16,6 +16,31 @@
   </head>
   <body>
     <header></header>
-    <main><form action=""></form></main>
+    <main>
+      <form action="">
+        <div class="box-email-phone box-input">
+          <div>
+            <label for="input-email" class="text-style">Email *</label>
+            <input
+              id="input-email"
+              class="input-style"
+              placeholder="foo@bar.com"
+              type="email"
+              required
+            />
+          </div>
+          <div>
+            <label for="input-phone" class="text-style">Phone</label>
+            <input
+              id="input-phone"
+              class="input-style"
+              pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}$"
+              placeholder="(83) 00000-0000"
+              type="tel"
+            />
+          </div>
+        </div>
+      </form>
+    </main>
   </body>
 </html>

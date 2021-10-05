@@ -1,0 +1,35 @@
+.box-input {
+  margin: 25px 0;
+  width: 100%;
+}
+
+.text-style {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #767676;
+}
+
+.input-style {
+  background: #ffffff;
+  border: 2px solid #aaaaaa;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 515px;
+  height: 40px;
+  text-indent: 10px;
+  display: block;
+}
+
+.box-email-phone div {
+  display: inline-block;
+}
+
+#input-email {
+  width: 330px;
+  margin: 0 20px 0 0;
+}
+
+#input-phone {
+  width: 162px;
+}
