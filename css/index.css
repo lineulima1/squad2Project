@@ -8,6 +8,7 @@
   font-size: 14px;
   line-height: 16px;
   color: #767676;
+  margin: 0 0 4px 0;
 }
 
 .input-style {
@@ -19,6 +20,7 @@
   height: 40px;
   text-indent: 10px;
   display: block;
+  font-size: 16px;
 }
 
 .box-email-phone div {
@@ -27,7 +29,7 @@
 
 #input-email {
   width: 330px;
-  margin: 0 20px 0 0;
+  margin: 4px 24px 0 0;
 }
 
 #input-phone {
