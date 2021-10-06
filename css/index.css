@@ -1,0 +1,29 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    color: #767676;
+    background: #FFFFFF;
+}
+
+.labelText{ 
+font-size: 14px;
+line-height: 16px;
+display: flex;
+color: #767676;
+width: 100px;
+margin: 0 0 4px 0;
+}
+
+.inputText{
+width: 515px;
+height: 40px;
+border: 2px solid #AAAAAA;
+box-sizing: border-box;
+border-radius: 4px;
+margin: 0 0 28px 0;
+padding: 0 0 0 12px;
+}
+
+::-webkit-input-placeholder {
+        font-size: 16px;
+        line-height: 18px;
+    }
