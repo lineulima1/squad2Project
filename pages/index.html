@@ -15,7 +15,53 @@
     <title>First Tab</title>
   </head>
   <body>
-    <header></header>
+
+  <div class="birthday-box box-input"> 
+    <h3 class="text-style">Birthday *</h3> 
+        </div>
+        <label for="day" class="text-style">Day</label>
+        <input
+          id="day"
+          type="number"
+          pattern="[0-9]{2}"
+          placeholder="01"
+          class="input-style input-day"
+        />
+        <!-- <select name="" id="" required></select> -->
+        </div>
+      <div>
+        <label for="month" class="text-style">Month</label>  
+        <input  
+        id="month"
+          type="number"
+          pattern="[0-9]{2}"
+          placeholder="01"
+          class="input-style input-month"
+        />
+        <!-- <select name="" id="" required></select> -->
+      </div>
+      <div>
+        <label for="year" class="text-style">Year</label> 
+        <input
+          id="year"
+          type="number"
+          pattern="[0-9]{4}"
+          placeholder="1800"
+          class="input-style input-year"
+        />
+        <!-- <select name="" id="" required></select> -->
+      </div>
+      <div>
+        <label for="age" class="text-style">Age</label>
+        <input
+          id="age"
+          type="number"
+          class="input-style input-age"
+          disabled
+        />
+      </div>
+    </div>
     <main><form action=""></form></main>
+    <script src="/js/index.js"></script>
   </body>
 </html>

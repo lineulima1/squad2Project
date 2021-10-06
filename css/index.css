@@ -1,0 +1,41 @@
+*{
+margin: 0 auto;
+padding: 20px;
+float:left;
+}
+.label{
+display: flex;
+flex-direction:row;
+
+  }
+
+.input-style {
+background: #FFFFFF;
+border: 2px solid #AAAAAA;;
+box-sizing: border-box;
+border-radius: 4px;
+height: 40px;
+text-indent: 10px;
+
+}
+
+.box-input {
+margin:10px 0;
+width: 100%;
+}
+ 
+#Birthday{
+display: block;
+font-size: 18px;
+line-height: 16px;
+}
+      
+.text-style {
+display:flex;
+font-family: 'Nunito', sans-serif;
+font-size: 14px;
+line-height: 16px;
+color: #767676;
+}
+
+
