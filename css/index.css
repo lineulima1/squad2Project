@@ -65,3 +65,40 @@ input::-webkit-inner-spin-button {
 #input-phone {
   width: 162px;
 }
+
+/* * ############## NAVEGAÇÂO #############################################  */
+
+a {
+  text-decoration: none;
+  color: #111111;
+}
+.navegacao {
+  margin-top: 30px;
+  display: flex;
+  width: 515px;
+  height: 48px;
+  background-color: #FFFFFF;
+}
+.navegacao ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  width: 100%;
+  height: 48px;
+}
+.navegacao li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px -2px 0px #AAAAAA;
+  width: 33.3%;
+  font-size: 16px;
+  font-family:Nunito;
+  font-weight: 400;
+}
+.active a {
+  color: #074EE8;
+}
+.navegacao .active {
+  box-shadow: inset 0px -3px 0px #074EE8;
+}
