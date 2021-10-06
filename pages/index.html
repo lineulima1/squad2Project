@@ -15,7 +15,32 @@
     <title>First Tab</title>
   </head>
   <body>
-    <div class="birthday-box box-input">
+    <header></header>
+    <main>
+      <form action="">
+        <div class="box-email-phone box-input">
+          <div>
+            <label for="input-email" class="text-style">Email *</label>
+            <input
+              id="input-email"
+              class="input-style"
+              placeholder="foo@bar.com"
+              type="email"
+              required
+            />
+          </div>
+          <div>
+            <label for="input-phone" class="text-style">Phone</label>
+            <input
+              id="input-phone"
+              class="input-style"
+              pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}$"
+              placeholder="(83) 00000-0000"
+              type="tel"
+            />
+          </div>
+        </div>
+            <div class="birthday-box box-input">
       <h3 class="text-style">Birthday *</h3>
       <div>
         <label for="day" class="text-style">Day</label>
@@ -27,7 +52,6 @@
           placeholder="01"
           class="input-style input-birthday"
         />
-        <!-- <select name="" id="" required></select> -->
       </div>
       <div>
         <label for="month" class="text-style">Month</label>
@@ -39,7 +63,6 @@
           placeholder="01"
           class="input-style input-birthday"
         />
-        <!-- <select name="" id="" required></select> -->
       </div>
       <div>
         <label for="year" class="text-style">Year</label>
@@ -51,7 +74,6 @@
           placeholder="1800"
           class="input-style input-birthday"
         />
-        <!-- <select name="" id="" required></select> -->
       </div>
       <div>
         <label for="age" class="text-style">Age</label>
@@ -64,7 +86,8 @@
         />
       </div>
     </div>
-    <main><form action=""></form></main>
-    <script src="/js/index.js"></script>
+      </form>
+    </main>
+<script src="/js/index.js"></script>
   </body>
 </html>

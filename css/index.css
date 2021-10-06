@@ -1,20 +1,10 @@
-.input-style {
-  background: #ffffff;
-  border: 2px solid #aaaaaa;
-  box-sizing: border-box;
-  border-radius: 4px;
-  height: 40px;
-  text-indent: 10px;
-  display: block;
-}
 
 .box-input {
-  margin: 10px 0;
+  margin: 25px 0;
   width: 100%;
 }
 
 .text-style {
-  display: flex;
   font-family: 'Nunito', sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -48,4 +38,30 @@ input::-webkit-inner-spin-button {
 
 .birthday-box {
   width: 763px;
+  margin: 0 0 4px 0;
+}
+
+.input-style {
+  background: #ffffff;
+  border: 2px solid #aaaaaa;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 515px;
+  height: 40px;
+  text-indent: 10px;
+  display: block;
+  font-size: 16px;
+}
+
+.box-email-phone div {
+  display: inline-block;
+}
+
+#input-email {
+  width: 330px;
+  margin: 4px 24px 0 0;
+}
+
+#input-phone {
+  width: 162px;
 }
