@@ -1,7 +1,6 @@
 * {
     font-family: 'Nunito', sans-serif;
     color: #767676;
-    background: #FFFFFF;
 }
 
 /* * ############## NAVEGAÇÂO #############################################  */
@@ -180,8 +179,19 @@ input::-webkit-inner-spin-button {
     }
 .btn p{
     padding-left: 12px;
+    color: #FFFFFF;
 }
-    .btn img {
+
+.btn .next {
         height: 18px;
         margin: 0 11.5px 0 6px
     }
+.final {
+  width: 91px;
+}
+    
+.btn .finish {
+      height: 18px;
+      margin-right: 5px;
+    }
+  
