@@ -18,9 +18,8 @@
   </head>
   <body>
     <header></header>
-    <main>
-      <form action="">
-        <div class="box-input">
+    <main><form action="">
+      <div class="box-input">
           <p class="text-style">Certificates</p>
           <div class="input-style box-certificate-input">
             <input
@@ -35,8 +34,14 @@
             <i data-feather="chevron-right" class="chevron-right"></i>
           </div>
         </div>
-      </form>
-    </main>
+          <label for="teamName" class="labelText">Team Name *</label>
+    <input type="text" id="teamName" class="inputText" required placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+    
+    <label for="nstitution" class="labelText">Institution *</label>
+    <input type="text" id="institution" class="inputText" required placeholder="Universidade Federal da Paraíba">
+    
+    <label for="graduation" class="labelText">Graduation *</label>
+    <input type="text" id="graduation" class="inputText" required placeholder="Ciências da Computação"></form></main>
     <script>
       feather.replace();
     </script>
