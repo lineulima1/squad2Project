@@ -20,14 +20,103 @@
   </head>
   <body class="background">
     <div class="background-forms" id="position">
-      <header>
-        <div class="auto-layout">
+    <header>
+      <div class="auto-layout">
           <div class="inside-auto-layout"> 
             <h1 class="title">Team Sign Up</h1>
           </div>
         </div>
-      </header>
-      <main><form action=""></form></main>
+      <nav class="navegacao">
+        <ul>
+          <li class="active"><a href="#">Basic</a></li>
+          <li><a href="#">Social</a></li>
+          <li><a href="#">Certificates</a></li>
+        </ul>
+  </nav>
+    </header>
+    <main>
+      <form action="secondTap.html">
+                <label for="nome" class="labelText">Full Name *</label>
+        <input type="text" id="nome" class="inputText" required placeholder="Foo Bar">
+    
+        <label for="nickname" class="labelText">Nickname</label>
+        <input type="text" id="nickname" class="inputText" placeholder="Juanito">
+        <div class="box-email-phone box-input">
+          <div>
+            <label for="input-email" class="text-style">Email *</label>
+            <input
+              id="input-email"
+              class="input-style"
+              placeholder="foo@bar.com"
+              type="email"
+              required
+            />
+          </div>
+          <div>
+            <label for="input-phone" class="text-style">Phone</label>
+            <input
+              id="input-phone"
+              class="input-style"
+              pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}$"
+              placeholder="(83) 00000-0000"
+              type="tel"
+            />
+          </div>
+        </div>
+            <div class="birthday-box box-input">
+      <h3 class="text-style">Birthday *</h3>
+      <div>
+        <label for="day" class="text-style">Day</label>
+        <input
+          id="day"
+          min="01" max="31"
+          type="number"
+          pattern="[0-9]{2}"
+          placeholder="01"
+          class="input-style input-birthday"
+        />
+      </div>
+      <div>
+        <label for="month" class="text-style">Month</label>
+        <input
+          id="month"
+          min="01" max="12"
+          type="number"
+          pattern="[0-9]{2}"
+          placeholder="01"
+          class="input-style input-birthday"
+        />
+      </div>
+      <div>
+        <label for="year" class="text-style">Year</label>
+        <input
+          id="year"
+          min="1800" max="2021"
+          type="number"
+          pattern="[0-9]{4}"
+          placeholder="1800"
+          class="input-style input-birthday"
+        />
+      </div>
+      <div>
+        <label for="age" class="text-style">Age</label>
+        <input
+          id="age"
+          min="0" max="200"
+          type="number"
+          class="input-style input-birthday"
+          disabled
+        />
+      </div>
     </div>
-    </body>
+        <div class="divCheckBox">
+        <input type="checkbox" name="" id="aprove" class="inputCheckBox" required><label for="aprove" class="labelCheckBox">I accept the terms and privacy</label>
+    </div>
+           <button class="btn"><p>Next</p><img src="/icons/chevron-right.svg" alt="chevron-right"></button>
+      </form>
+      
+    </main>
+      </div>
+<script src="/js/index.js"></script>
+  </body>
 </html>

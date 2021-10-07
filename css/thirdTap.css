@@ -1,0 +1,71 @@
+.box-certificate-input {
+  position: relative;
+}
+
+.certificates-input {
+  border: none;
+  width: 90%;
+  height: 2.5em;
+  position: absolute;
+  left: 0;
+  background: none;
+  text-indent: 10px;
+}
+
+.certificates-input:focus {
+  outline: none;
+}
+
+.heart {
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  bottom: 6px;
+  vertical-align: middle;
+  color: black;
+  cursor: pointer;
+}
+
+.heart-red {
+  color: red;
+}
+
+.more {
+  margin: 20px 0 46px;
+  width: 85px;
+  height: 40px;
+  /* left: 666px;
+  top: 556px; */
+
+  margin-left: auto;
+
+  background: #074ee8;
+  border-radius: 4px;
+  display: flex;
+
+  border: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+
+  color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  text-align: center;
+  /* font-size: 16px; */
+  cursor: pointer;
+}
+
+.plus {
+  margin-right: 6px;
+  height: 18px;
+  width: 18px;
+  /* background: white; */
+}
+
+.chevron-right {
+  margin-left: 6px;
+  height: 18px;
+  width: 18px;
+}
