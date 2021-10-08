@@ -1,35 +1,28 @@
 .background{
-    background: #ECEEF2;
+  background: #ECEEF2;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
+
 .background-forms{
-    position: absolute;
-    width: 617px;
-    height: 763px;
-    background: #FFFFFF;
-    border-radius: 20px; 
-    margin-left: 30%;
-    margin-top: 10%;
+  width: 550px;
+  height: 763px;
+  background: #FFFFFF;
+  border-radius: 20px; 
+  margin-left: 30%;
+  padding: 56px 50px;
 }
 
 .title{
-    position: static;
-    width: 755px;
-    height: 24px;
-    left: 118px;
-    top: 15px;
-    font-family: 'Inter';
-    font-style: normal; 
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 56px 34px;
+  width: 755px;
+  height: 24px;
+  font-family: 'Inter', sans-serif; 
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
 }
-/* * ############## NAVEGAÇÂO #############################################  */
 
+/* ############## NAVEGAÇÂO ############## */
 a {
   text-decoration: none;
   color: #111111;
@@ -40,6 +33,7 @@ a {
   width: 515px;
   height: 48px;
   background-color: #FFFFFF;
+  margin: 20px 0px 61px 0px;
 }
 .navegacao ul {
   display: flex;
@@ -55,42 +49,45 @@ a {
   box-shadow: inset 0px -2px 0px #AAAAAA;
   width: 33.3%;
   font-size: 16px;
-  font-family:Nunito;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
 }
+
 .active a {
   color: #074EE8;
 }
+
 .navegacao .active {
   box-shadow: inset 0px -3px 0px #074EE8;
 }
 
+/* ############## FORMULARIO ############## */
 .labelText{ 
-font-size: 14px;
-line-height: 16px;
-display: flex;
-color: #767676;
-width: 100px;
-margin: 0 0 4px 0;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  color: #767676;
+  width: 100px;
+  margin: 0 0 4px 0;
 }
 
 .inputText{
-width: 515px;
-height: 40px;
-border: 2px solid #AAAAAA;
-box-sizing: border-box;
-border-radius: 4px;
-margin: 0 0 28px 0;
-padding: 0 0 0 12px;
+  width: 515px;
+  height: 40px;
+  border: 2px solid #AAAAAA;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0 0 48px 0;
+  padding: 0 0 0 12px;
 }
 
 ::-webkit-input-placeholder {
-        font-size: 16px;
-        line-height: 18px;
-    }
+  font-size: 16px;
+  line-height: 18px;
+}
 
 .box-input {
-  margin: 25px 0;
+  margin: 0px 0px 24px 0px;
   width: 100%;
 }
 
@@ -101,21 +98,49 @@ padding: 0 0 0 12px;
   color: #767676;
 }
 
+.input-style {
+  background: #ffffff;
+  border: 2px solid #aaaaaa;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 515px;
+  height: 40px;
+  text-indent: 10px;
+  display: block;
+  font-size: 14px;
+}
+
+.box-email-phone div {
+  display: inline-block;
+  margin: 0px 0px 24px 0px;
+}
+
+#input-email {
+  width: 330px;
+  margin: 4px 24px 0 0;
+}
+
+#input-phone {
+  width: 162px;
+}
+
 .birthday-box h3 {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 14px;
 }
 
 .birthday-box div {
   display: inline-block;
-  width: 20%;
+  width: 17%;
+  margin-bottom: 35px;
 }
 
 #Birthday {
   display: block;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 16px;
 }
+
 .input-birthday {
   width: 75%;
 }
@@ -131,81 +156,63 @@ input::-webkit-inner-spin-button {
   margin: 0 0 4px 0;
 }
 
-.input-style {
-  background: #ffffff;
-  border: 2px solid #aaaaaa;
-  box-sizing: border-box;
-  border-radius: 4px;
-  width: 515px;
-  height: 40px;
-  text-indent: 10px;
-  display: block;
-  font-size: 16px;
-}
-
-.box-email-phone div {
-  display: inline-block;
-}
-
-#input-email {
-  width: 330px;
-  margin: 4px 24px 0 0;
-}
-
-#input-phone {
-  width: 162px;
+#day, #month, #year, #age {
+  width: 120px;
 }
 
 .divCheckBox{
-   display: flex;
-   align-items: flex-start;
-   width: 250px;
-   height: 28px;
-   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-   }
+  display: flex;
+  align-items: flex-start;
+  width: 250px;
+  height: 28px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-top: 20px;
+}
    
-   .inputCheckBox{
-   position: static;
-   width: 20px;
-   height: 20px;
-   background: #074EE8;
-   border: 2px solid #074EE8;
-   border-radius: 2px;
-   margin: 0 8px 0 0 ;
-   }
+.inputCheckBox{
+  position: static;
+  width: 20px;
+  height: 20px;
+  background: #074EE8;
+  border: 2px solid #074EE8;
+  border-radius: 2px;
+  margin: 0 8px 0 0 ;
+}
    
-   .labelCheckBox{
-   position: static;
-   width: 214px;
-   height: 18px;
-   font-family:'Nunito', sans-serif;
-   font-size: 16px;
-   line-height: 18px;
-   color:#111;
-   }
+.labelCheckBox{
+  position: static;
+  width: 214px;
+  height: 18px;
+  font-family:'Nunito', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color:#111111;
+}
    
 
 .btn{
-    display: flex;
-    font-family: 'Nunito', sans-serif;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    padding: 0px 12px;
-    margin: 0px 6px;
-    line-height: 18px;
-    width: 81px;
-    height: 40px;
-    background: #074EE8;
-    border-radius: 4px;
-    border: none;
-    color: #FFFFFF; 
-    margin: 41px 0 0px 426px;
-    }
-.btn p{
-    padding-left: 12px;
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 0px 12px;
+  margin: 0px 6px;
+  line-height: 18px;
+  width: 81px;
+  height: 40px;
+  background: #074EE8;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF; 
+  margin: 65px 0px 0px 445px;
 }
-    .btn img {
-        height: 18px;
-        margin: 0 11.5px 0 6px
-    }
+
+.btn p{
+  padding-left: 12px;
+}
+
+.btn img {
+  height: 18px;
+  margin: 0 11.5px 0 6px
+}
