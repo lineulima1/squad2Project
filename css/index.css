@@ -197,7 +197,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
   font-size: 16px;
   padding: 0px 12px;
-  margin: 0px 6px;
+  margin: 61px 6px 0px 433px;
   line-height: 18px;
   width: 81px;
   height: 40px;
@@ -205,7 +205,10 @@ input::-webkit-inner-spin-button {
   border-radius: 4px;
   border: none;
   color: #FFFFFF; 
-  margin: 65px 0px 445px 433px;
+}
+
+#buttonTela2 {
+  margin-top: 340px;
 }
 
 .btn p{
