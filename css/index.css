@@ -173,10 +173,10 @@ input::-webkit-inner-spin-button {
   position: static;
   width: 20px;
   height: 20px;
-  background: #074EE8;
+  background-color: #074EE8;
   border: 2px solid #074EE8;
   border-radius: 2px;
-  margin: 0 8px 0 0 ;
+  margin: 0 8px 0px 0 ;
 }
    
 .labelCheckBox{
