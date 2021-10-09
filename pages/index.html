@@ -69,6 +69,7 @@
                 pattern="[0-9]{2}"
                 placeholder="01"
                 class="input-style input-birthday"
+                required
               />
             </div>
             <div>
@@ -80,6 +81,7 @@
                 pattern="[0-9]{2}"
                 placeholder="01"
                 class="input-style input-birthday"
+                required
               />
             </div>
             <div>
@@ -91,6 +93,7 @@
                 pattern="[0-9]{4}"
                 placeholder="1800"
                 class="input-style input-birthday"
+                required
               />
             </div>
             <div>
@@ -105,7 +108,10 @@
             </div>
           </div>
           <div class="divCheckBox">
-            <input type="checkbox" name="" id="aprove" class="inputCheckBox" required><spam id="bgCheck"></spam><label for="aprove" class="labelCheckBox">I accept the terms and privacy</label>
+            <label class="check-terms text-style labelCheckBox">I accept the terms and privacy
+              <input type="checkbox" required/>
+              <span class="checkmark"></span>
+            </label>
           </div>
           <button class="btn"><p>Next</p><img src="/icons/chevron-right.svg" alt="chevron-right"></button>
         </form>

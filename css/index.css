@@ -16,7 +16,7 @@
 .title{
   width: 755px;
   height: 24px;
-  font-family: 'Inter', sans-serif; 
+  font-family: 'Inter'; 
   font-weight: 600;
   font-size: 18px;
   color: #000000;
@@ -168,7 +168,82 @@ input::-webkit-inner-spin-button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   margin-top: 20px;
 }
-   
+
+/* The check-terms */
+.check-terms {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  padding-top: 5px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check-terms input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid #aaa;
+  border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.check-terms:hover input ~ .checkmark {
+  background-color: white;
+  border: 2px solid #767676;
+  border-radius: 2px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-terms input:checked ~ .checkmark {
+  background-color: #074ee8;
+  border: 2px solid #074ee8;
+  border-radius: 2px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check-terms input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-terms .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #FFFFFF;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*
 .inputCheckBox{
   position: static;
   width: 20px;
@@ -177,7 +252,7 @@ input::-webkit-inner-spin-button {
   border: 2px solid #074EE8;
   border-radius: 2px;
   margin: 0 8px 0px 0 ;
-}
+}*/
    
 .labelCheckBox{
   position: static;
