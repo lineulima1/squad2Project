@@ -23,3 +23,14 @@ function addCertificate(certificate, have_heart) {
       </a>
   `;
 }
+
+function alerta() {
+
+  return `
+  <div class="alerta">
+  <p class="alertaErro"> Error: </p>
+  <p> A maximum of 5 certificates </p>
+  <a onclick="removeAlert(this)"class="alertaFechar"> OK </a>
+  </div>
+  `
+}
