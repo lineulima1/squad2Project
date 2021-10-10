@@ -1,3 +1,4 @@
+
 .box-certificate-input {
   position: relative;
   display: flex;
@@ -40,7 +41,7 @@
 }
 
 .more {
-  margin: 20px 0 0;
+  margin: 20px 35px 0;
   width: 85px;
   height: 40px;
   margin-left: auto;
