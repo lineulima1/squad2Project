@@ -140,3 +140,49 @@
   text-overflow: ellipsis;
   margin: 0 20px 0 0;
 }
+
+/* * ################# ALERT ############################ */
+
+.alertaErro {
+  color: black;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+}
+.alerta {
+display: flex;
+align-items:center;
+justify-content:space-evenly;
+flex-direction: column;
+color: black;
+background-color: #FFFFFF;
+width: 443px;
+height: 160px;
+position: absolute;
+top: 35%;
+left: 35%;
+font-size: 16px;
+font-family: Nunito, sans-serif;
+box-sizing: border-box;
+border: 2px solid #AAAAAA;
+border-radius: 4px;
+}
+.alertaFechar {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color: white;
+  text-decoration: none;
+  background-color: blue;
+  width: 57px;
+  height: 25px;
+  border-radius: 4px;
+  padding: 0px 12px;
+  cursor: pointer;
+}
+.invisivel {
+  opacity:0.3;
+  pointer-events: none;
+}
+.alertaVisivel a {
+  opacity: 1;
+}
