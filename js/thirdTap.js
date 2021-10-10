@@ -47,7 +47,7 @@ function dropdownElement(element, certificate) {
       div_content.innerHTML = addCertificate(certificate, check_heart);
       break;
     case 5:
-        let main = $('main')
+        let main = $('#position')
         main.classList.add('invisivel')
         document.body.innerHTML += alerta()
       break;
@@ -58,7 +58,7 @@ function dropdownElement(element, certificate) {
   }
 }
 function removeAlert(element) {
-  let main = $('main')
+  let main = $('#position')
   element.parentElement.remove()
   main.classList.remove('invisivel')
  }
