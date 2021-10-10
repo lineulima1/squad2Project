@@ -1,3 +1,34 @@
+.background{
+    background: #ECEEF2;
+}
+.background-forms{
+    position: absolute;
+    width: 617px;
+    height: 763px;
+    background: #FFFFFF;
+    border-radius: 20px; 
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.title{
+    position: static;
+    width: 755px;
+    height: 24px;
+    left: 118px;
+    top: 15px;
+    font-family: 'Inter';
+    font-style: normal; 
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 56px 34px;
+}
+
 /* * ############## NAVEGAÇÂO #############################################  */
 
 a {
@@ -178,3 +209,56 @@ input::-webkit-inner-spin-button {
   height: 18px;
   margin: 0 11.5px 0 6px;
 }
+.divCheckBox{
+   display: flex;
+   align-items: flex-start;
+   width: 250px;
+   height: 28px;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   }
+   
+   .inputCheckBox{
+   position: static;
+   width: 20px;
+   height: 20px;
+   background: #074EE8;
+   border: 2px solid #074EE8;
+   border-radius: 2px;
+   margin: 0 8px 0 0 ;
+   }
+   
+   .labelCheckBox{
+   position: static;
+   width: 214px;
+   height: 18px;
+   font-family:'Nunito', sans-serif;
+   font-size: 16px;
+   line-height: 18px;
+   color:#111;
+   }
+   
+
+.btn{
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 0px 12px;
+    margin: 0px 6px;
+    line-height: 18px;
+    width: 81px;
+    height: 40px;
+    background: #074EE8;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF; 
+    margin: 41px 0 0px 426px;
+    }
+.btn p{
+    padding-left: 12px;
+}
+    .btn img {
+        height: 18px;
+        margin: 0 11.5px 0 6px
+    }
