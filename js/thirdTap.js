@@ -47,7 +47,9 @@ function dropdownElement(element, certificate) {
       div_content.innerHTML = addCertificate(certificate, check_heart);
       break;
     case 5:
-      alert('Não pode cadastrar acima de 5 certificados');
+        let main = $('main')
+        main.classList.add('invisivel')
+        document.body.innerHTML += alerta()
       break;
     default:
       div_content = check_heart ? $('.heart') : $('.no-heart');
@@ -55,3 +57,8 @@ function dropdownElement(element, certificate) {
       break;
   }
 }
+function removeAlert(element) {
+  let main = $('main')
+  element.parentElement.remove()
+  main.classList.remove('invisivel')
+ }
