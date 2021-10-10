@@ -176,6 +176,7 @@ input::-webkit-inner-spin-button {
     border: none;
     color: #FFFFFF; 
     margin: 41px 0 0px 426px;
+    cursor: pointer;
     }
 .btn p{
     padding-left: 12px;
