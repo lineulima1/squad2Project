@@ -18,13 +18,13 @@
   </head>
   <body>
     <header></header>
-    <main><form action="">
+    <main><form action="teste.html">
       <div class="box-input">
           <p class="text-style">Certificates</p>
           <div class="input-style box-certificate-input">
             <input
               type="text"
-              class="certificates-input"
+              class="certificates-input" id="certificates"
               placeholder="http://www.linkedin.com/in/foo-bar-3a0560104/"
             />
             <i data-feather="heart" class="heart"></i>
@@ -41,10 +41,16 @@
     <input type="text" id="institution" class="inputText" required placeholder="Universidade Federal da Paraíba">
     
     <label for="graduation" class="labelText">Graduation *</label>
-    <input type="text" id="graduation" class="inputText" required placeholder="Ciências da Computação"></form></main>
+    <input type="text" id="graduation" class="inputText" required placeholder="Ciências da Computação">
+
+    <button class="btn" onclick="inserirDados3()"><p>Next</p><img src="/icons/chevron-right.svg" alt="chevron-right"></button>
+  
+  </form></main>
+
     <script>
       feather.replace();
     </script>
     <script src="/js/thirdTap.js"></script>
+    <script src="/js/teste.js"></script>
   </body>
 </html>
