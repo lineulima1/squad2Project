@@ -1,59 +1,60 @@
 .box-certificate-input {
   position: relative;
+  display: flex;
 }
 
 .certificates-input {
   border: none;
   width: 90%;
-  height: 2.5em;
-  position: absolute;
-  left: 0;
+  margin: auto 0;
   background: none;
   text-indent: 10px;
+  font-size: 16px;
 }
 
 .certificates-input:focus {
   outline: none;
 }
 
-.heart {
+#heart-button {
   position: absolute;
   right: 12px;
   top: 6px;
   bottom: 6px;
   vertical-align: middle;
-  color: black;
   cursor: pointer;
+  background: #ffffff;
+  border: none;
+  transition: 10s all;
 }
 
-.heart-red {
-  color: red;
+#heart-button:active img {
+  transform: scale(1.5);
+}
+
+.red-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
 }
 
 .more {
-  margin: 20px 0 46px;
+  margin: 20px 0 0;
   width: 85px;
   height: 40px;
-  /* left: 666px;
-  top: 556px; */
-
   margin-left: auto;
-
   background: #074ee8;
   border-radius: 4px;
   display: flex;
 
-  border: none;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0px 12px;
 
   color: #ffffff;
   font-family: 'Nunito', sans-serif;
-  display: flex;
   text-align: center;
-  /* font-size: 16px; */
   cursor: pointer;
 }
 
@@ -61,11 +62,127 @@
   margin-right: 6px;
   height: 18px;
   width: 18px;
-  /* background: white; */
 }
 
 .chevron-right {
   margin-left: 6px;
   height: 18px;
   width: 18px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.title-dropdown {
+  margin: 20px 0 5px;
+  width: 200px;
+  height: 40px;
+
+  background: #ffffff;
+
+  border: 2px solid #aaaaaa;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0px 12px;
+
+  display: flex;
+  align-items: center;
+
+  font-family: 'Nunito';
+  cursor: pointer;
+}
+
+.chevron-down {
+  color: black;
+  height: 18px;
+  width: 18px;
+  margin: 0 5px 0;
+  margin-left: auto;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 380px;
+  font-family: 'Nunito';
+  font-size: 14px;
+  line-height: 20px;
+  background: #ffffff;
+  border: 2px solid #aaaaaa;
+  border-radius: 4px;
+  padding: 8px 0 8px 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.dropdown-content p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0 20px 0 0;
+}
+
+/* * ################# ALERT ############################ */
+
+.alertaErro {
+  color: black;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+}
+.alerta {
+display: flex;
+align-items:center;
+justify-content:space-evenly;
+flex-direction: column;
+color: black;
+background-color: #FFFFFF;
+width: 443px;
+height: 160px;
+position: absolute;
+top: 35%;
+left: 35%;
+font-size: 16px;
+font-family: Nunito, sans-serif;
+box-sizing: border-box;
+border: 2px solid #AAAAAA;
+border-radius: 4px;
+}
+.alertaFechar {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color: white;
+  text-decoration: none;
+  background-color: blue;
+  width: 57px;
+  height: 25px;
+  border-radius: 4px;
+  padding: 0px 12px;
+  cursor: pointer;
+}
+.invisivel {
+  opacity:0.3;
+  pointer-events: none;
+}
+.alertaVisivel a {
+  opacity: 1;
 }

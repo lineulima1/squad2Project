@@ -1,3 +1,7 @@
+
+* {
+    font-family: 'Nunito', sans-serif;
+  color: #767676;}
 .background{
   background: #ECEEF2;
   padding-top: 5%;
@@ -21,6 +25,7 @@
   font-size: 18px;
   color: #000000;
 }
+
 
 /* ############## NAVEGAÇÂO ############## */
 a {
@@ -46,7 +51,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0px -2px 0px #AAAAAA;
+  box-shadow: inset 0px -2px 0px #aaaaaa;
   width: 33.3%;
   font-size: 16px;
   font-family: 'Nunito', sans-serif;
@@ -54,12 +59,13 @@ a {
 }
 
 .active a {
-  color: #074EE8;
+  color: #074ee8;
 }
 
 .navegacao .active {
-  box-shadow: inset 0px -3px 0px #074EE8;
+  box-shadow: inset 0px -3px 0px #074ee8;
 }
+
 
 /* ############## FORMULARIO ############## */
 .labelText{ 
@@ -160,6 +166,58 @@ input::-webkit-inner-spin-button {
   width: 120px;
 }
 
+.divCheckBox {
+  display: flex;
+  align-items: flex-start;
+  width: 250px;
+  height: 28px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.inputCheckBox {
+  position: static;
+  width: 20px;
+  height: 20px;
+  background: #074ee8;
+  border: 2px solid #074ee8;
+  border-radius: 2px;
+  margin: 0 8px 0 0;
+}
+
+.labelCheckBox {
+  position: static;
+  width: 214px;
+  height: 18px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #111;
+}
+
+.btn {
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 0px 12px;
+  margin: 0px 6px;
+  line-height: 18px;
+  width: 81px;
+  height: 40px;
+  background: #074ee8;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  margin: 41px 0 0px 426px;
+}
+.btn p {
+  padding-left: 12px;
+}
+.btn img {
+  height: 18px;
+  margin: 0 11.5px 0 6px;
+}
 .divCheckBox{
   display: flex;
   align-items: flex-start;
