@@ -11,15 +11,29 @@
       href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
       rel="stylesheet"
     />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/thirdTap.css" />
     <script src="https://unpkg.com/feather-icons"></script>
     <title>Third Tab</title>
   </head>
-  <body>
-    <header></header>
-    <main><form action="">
-      <div class="box-input">
+  <body class="background">
+    <div class="background-forms" id="position">
+    <header>
+      <h1 class="title">Team Sign Up</h1>
+      <nav class="navegacao">
+        <ul>
+          <li ><a href="index.html">Basic</a></li>
+          <li><a href="secondTap.html">Social</a></li>
+          <li class="active"><a href="#">Certificates</a></li>
+        </ul>
+    </header>
+    <main>
+      <form action="fourthTap.html">
+        <div class="box-input">
           <p class="text-style">Certificates</p>
           <div class="input-style box-certificate-input">
             <input
@@ -27,24 +41,50 @@
               class="certificates-input"
               placeholder="http://www.linkedin.com/in/foo-bar-3a0560104/"
             />
-            <i data-feather="heart" class="heart"></i>
+            <button id="heart-button" onclick="redHeart()"><img class="heart-img" src="/icons/grey-heart.svg"  ></img></button>
           </div>
-          <div class="more">
-            <i data-feather="plus" class="plus"></i>More
-            <i data-feather="chevron-right" class="chevron-right"></i>
+          <div class="buttons">
+            <div class="dropdown"></div>
+            <div class="more" onclick="more()">
+              <i data-feather="plus" class="plus"></i>More
+              <i data-feather="chevron-right" class="chevron-right"></i>
+            </div>
           </div>
         </div>
-          <label for="teamName" class="labelText">Team Name *</label>
-    <input type="text" id="teamName" class="inputText" required placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-    
-    <label for="nstitution" class="labelText">Institution *</label>
-    <input type="text" id="institution" class="inputText" required placeholder="Universidade Federal da Paraíba">
-    
-    <label for="graduation" class="labelText">Graduation *</label>
-    <input type="text" id="graduation" class="inputText" required placeholder="Ciências da Computação"></form></main>
+        <label for="teamName" class="labelText text-style">Team Name *</label>
+        <input
+          type="text"
+          id="teamName"
+          class="inputText"
+          required
+          placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/"
+        />
+
+        <label for="institution" class="labelText text-style">Institution *</label>
+        <input
+          type="text"
+          id="institution"
+          class="inputText"
+          required
+          placeholder="Universidade Federal da Paraíba"
+        />
+
+        <label for="graduation" class="labelText text-style">Graduation *</label>
+        <input
+          type="text"
+          id="graduation"
+          class="inputText"
+          required
+          placeholder="Ciências da Computação"
+        />
+        <button class="btn final" ><img class="finish"src="/icons/check.svg" alt="checked">Finish</button>
+      </form>
+    </main>
+    </div>
     <script>
       feather.replace();
     </script>
     <script src="/js/thirdTap.js"></script>
+    <script src="/js/view/thirdTapView.js"></script>
   </body>
 </html>
