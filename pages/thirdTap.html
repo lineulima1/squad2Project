@@ -11,23 +11,28 @@
       href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
       rel="stylesheet"
     />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/thirdTap.css" />
     <script src="https://unpkg.com/feather-icons"></script>
     <title>Third Tab</title>
   </head>
-  <body>   
-  </form></main>
+  <body class="background">
+    <div class="background-forms" id="position">
     <header>
+      <h1 class="title">Team Sign Up</h1>
       <nav class="navegacao">
         <ul>
-          <li><a href="index.html">Basic</a></li>
+          <li ><a href="index.html">Basic</a></li>
           <li><a href="secondTap.html">Social</a></li>
           <li class="active"><a href="#">Certificates</a></li>
         </ul>
-  </nav>
+    </header>
     <main>
-      <form action="">
+      <form action="fourthTap.html">
         <div class="box-input">
           <p class="text-style">Certificates</p>
           <div class="input-style box-certificate-input">
@@ -46,7 +51,7 @@
             </div>
           </div>
         </div>
-        <label for="teamName" class="labelText">Team Name *</label>
+        <label for="teamName" class="labelText text-style">Team Name *</label>
         <input
           type="text"
           id="teamName"
@@ -55,7 +60,7 @@
           placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/"
         />
 
-        <label for="nstitution" class="labelText">Institution *</label>
+        <label for="institution" class="labelText text-style">Institution *</label>
         <input
           type="text"
           id="institution"
@@ -64,7 +69,7 @@
           placeholder="Universidade Federal da Paraíba"
         />
 
-        <label for="graduation" class="labelText">Graduation *</label>
+        <label for="graduation" class="labelText text-style">Graduation *</label>
         <input
           type="text"
           id="graduation"
@@ -72,9 +77,10 @@
           required
           placeholder="Ciências da Computação"
         />
-      <button class="btn final" ><img class="finish"src="/icons/check.svg" alt="checked">Finish</button>
+        <button class="btn final" ><img class="finish"src="/icons/check.svg" alt="checked">Finish</button>
       </form>
     </main>
+    </div>
     <script>
       feather.replace();
     </script>

@@ -9,7 +9,6 @@
   margin: auto 0;
   background: none;
   text-indent: 10px;
-  font-size: 16px;
 }
 
 .certificates-input:focus {
@@ -40,7 +39,7 @@
 }
 
 .more {
-  margin: 20px 0 0;
+  margin: 20px 35px 0;
   width: 85px;
   height: 40px;
   margin-left: auto;
@@ -141,7 +140,13 @@
   margin: 0 20px 0 0;
 }
 
-/* * ################# ALERT ############################ */
+.final {
+  margin: 91px 6px 0px 423px;
+}
+
+
+
+/* *##################### ALERT ############################### */
 
 .alertaErro {
   color: black;
