@@ -13,7 +13,7 @@ document.querySelector('#year').addEventListener('input', function () {
   let day = document.querySelector('#day');
   let month = document.querySelector('#month');
 
-  let age_aux = getAge(`${this.value},${month.value - 1},${day.value}`);
+  let age_aux = getAge(`${this.value},${month.value },${day.value}`);
 
   document.querySelector('#age').value = age_aux;
 });
