@@ -8,12 +8,13 @@ function getAge(dateString) {
   }
   return age;
 }
-
 document.querySelector('#year').addEventListener('input', function () {
   let day = document.querySelector('#day');
   let month = document.querySelector('#month');
 
-  let age_aux = getAge(`${this.value},${month.value },${day.value}`);
-
+let age_aux = getAge(`${this.value},${month.value },${day.value}`);
+if(age_aux<0){
+age_aux="Invalid Age";
+}
   document.querySelector('#age').value = age_aux;
 });
