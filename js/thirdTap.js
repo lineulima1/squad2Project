@@ -45,6 +45,7 @@ function dropdownElement(element, certificate) {
       dropdown.innerHTML = createDropdown();
       div_content = check_heart ? $('.heart') : $('.no-heart');
       div_content.innerHTML = addCertificate(certificate, check_heart);
+      addCertificados(certificate)
       break;
     case 5:
         let main = $('main')
@@ -54,6 +55,7 @@ function dropdownElement(element, certificate) {
     default:
       div_content = check_heart ? $('.heart') : $('.no-heart');
       div_content.innerHTML += addCertificate(certificate, check_heart);
+      addCertificados(certificate)
       break;
   }
 }

@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/css/index.css" />
     <title>First Tab</title>
   </head>
-  <body class="background">
+  <body class="background" onload = "salvaDados()">
     <div class="background-forms" id="position">
     <header>
       <div class="auto-layout">
@@ -35,7 +35,7 @@
   </nav>
     </header>
     <main>
-      <form action="secondTap.html">
+      <form action="secondTap.html" onsubmit="inserirDados1()">
                 <label for="nome" class="labelText">Full Name *</label>
         <input type="text" id="nome" class="inputText" required placeholder="Foo Bar">
     
@@ -117,6 +117,8 @@
       
     </main>
       </div>
+      <script src="/js/inserirDados.js"></script>
 <script src="/js/index.js"></script>
+<script src="/js/onload.js"></script>
   </body>
 </html>

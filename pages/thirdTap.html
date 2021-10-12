@@ -27,11 +27,12 @@
         </ul>
   </nav>
     <main>
-      <form action="">
+      <form action="#" onsubmit="inserirDados3()">
         <div class="box-input">
           <p class="text-style">Certificates</p>
           <div class="input-style box-certificate-input">
             <input
+              id="certificates"
               type="text"
               class="certificates-input"
               placeholder="http://www.linkedin.com/in/foo-bar-3a0560104/"
@@ -55,7 +56,7 @@
           placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/"
         />
 
-        <label for="nstitution" class="labelText">Institution *</label>
+        <label for="institution" class="labelText">Institution *</label>
         <input
           type="text"
           id="institution"
@@ -80,5 +81,7 @@
     </script>
     <script src="/js/thirdTap.js"></script>
     <script src="/js/view/thirdTapView.js"></script>
+    <script src="/js/inserirDados.js"></script>
+    <script src="/js/onload.js"></script>
   </body>
 </html>
