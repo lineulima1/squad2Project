@@ -20,7 +20,7 @@
     <link rel="icons" href="/icons/chevron-right.svg" />
     <title>Fourth Tab</title>
   </head>
-  <body class="background">
+  <body class="background" onload="inseriDados()">
     <div class="background-forms" id="position">
     <header>
       <div class="auto-layout">
@@ -36,55 +36,57 @@
               </tr>
               <tr>
                 <td>Full Name</td>
-                <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+                <td><p class="fourthTap" name ="FullName"></p></td>
               </tr>
               <tr>
                 <td>Nickname</td>
-                <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+                <td><p class="fourthTap" name ="Nickname"></p></td>
               </tr>
               <tr>
                 <td>Email</td>
-                <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+                <td><p class="fourthTap" name ="email"></p></td>
               </tr>
               <tr>
                 <td>Phone</td>
-                <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+                <td><p class="fourthTap" name ="phone"></p></td>
               </tr>
               <tr>
                 <td>Birthday</td>
-                <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaan</td>
+                <td><p class="fourthTap" name ="birth"></p></td>
               </tr>
               <tr>
-                <td>LinkedIn</td>
-                <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+                <td>Linkedin</td>
+                <td><p class="fourthTap" name ="Linkedin"></p></td>
               </tr>
               <tr>
                 <td>Github</td>
-                <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+                <td><p class="fourthTap" name ="GitHub"></p></td>
               </tr>
               <tr>
                 <td>Cerficates</td>
-                <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+                <td name="Certificates"></td>
               </tr>
             </tr>
             <tr>
               <td>Team Name</td>
-              <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+              <td><p class="fourthTap" name ="TeamName"></p></td>
             </tr>
         </tr>
         <tr>
           <td>Institution</td>
-          <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+          <td><p class="fourthTap" name ="Institution"></p></td>
         </tr>
      </tr>
         <tr>
       <td>Graduation</td>
-      <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+      <td><p class="fourthTap" name ="Graduation"></p></td>
      </tr>
      </table>
-     <button class="btn" onclick ="window.location.href = 'index.html'";><p>OK</p><img src="/icons/chevron-right.svg" alt="chevron-right"></button>
+     <button class="btn" onclick ="limparLocalStorage()";><p>OK</p><img src="/icons/chevron-right.svg" alt="chevron-right"></button>
+     <script src="/js/onload.js"></script>
+     <script src="/js/inserirDados.js"></script>
+     <script src="/js/view/fourthTapView.js"></script>
      
      <header>
     </main>
     </html>
-    

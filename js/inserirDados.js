@@ -87,3 +87,10 @@ dados['all_certificates'] = all_certificates
 
 localStorage.setItem("infosForms", JSON.stringify(dados))
 }
+
+function limparLocalStorage (){
+    localStorage.clear()
+    
+    window.location.href = 'index.html'
+
+}

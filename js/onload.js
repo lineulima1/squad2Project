@@ -60,25 +60,53 @@ function salvaDados1(){
 
 }
 
-// function salvaDados2(){
+function inseriDados(){
 
-//     let dados = JSON.parse(localStorage.getItem("infosForms"))
+    let dados = JSON.parse(localStorage.getItem("infosForms"))
 
-//     if(dados.teamName != null && dados.institution != null && dados.graduation != null){
+    if(dados != null){
 
-//     let teamName = $id("teamName")
-//     teamName.value = dados.teamName
-//     teamName.style.color = "black"
+     let name = dados.nome
+     let nameImp = document.getElementsByName("FullName")
+     nameImp[0].textContent = name
 
-//     let institution = $id("institution")
-//     institution.value = dados.institution
-//     institution.style.color = "black"
+     let nickname = dados.nickName
+     let nicknameImp = document.getElementsByName("Nickname")
+     nicknameImp[0].textContent = nickname
+     
+     let email = dados.email
+     let emailImp = document.getElementsByName("email")
+     emailImp[0].textContent = email
+     
+     let phone =  dados.phone
+     let phoneImp = document.getElementsByName("phone")
+     phoneImp[0].textContent = phone
 
+     let birth = dados.birth
+     let birthImp = document.getElementsByName("birth")
+     birthImp[0].textContent = birth
 
-//     let graduation = $id("graduation")
-//      graduation.value = dados.graduation
-//      graduation.style.color = "black"
-//     }
-//     // let certificates = $id("certificates")
+    let linkedin = dados.link
+    let linkedinImp = document.getElementsByName("Linkedin")
+    linkedinImp[0].textContent = linkedin
 
-// }
+    let github = dados.git
+    let githubImp = document.getElementsByName("GitHub")
+    githubImp[0].textContent = github
+
+    let certificates = dados.all_certificates
+    let certificateImp = document.getElementsByName("Certificates")
+    certificateImp[0].innerHTML = createCertificates(certificates) 
+
+    let teamName = dados.teamName
+    let teamNameImp = document.getElementsByName("TeamName")
+    teamNameImp[0].textContent = teamName
+
+    let institution = dados.institution
+    let institutionImp = document.getElementsByName("Institution")
+    institutionImp[0].textContent = institution
+
+    let graduation = dados.graduation
+    let graduationImp = document.getElementsByName("Graduation")
+    graduationImp[0].textContent = graduation
+}}
