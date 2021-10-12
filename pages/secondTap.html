@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/css/index.css" />
     <title>Second Tab</title>
   </head>
-  <body class="background">
+  <body class="background" onload = "salvaDados1()" >
     <div class="background-forms" id="position">
       <header>
         <h1 class="title">Team Sign Up</h1>
@@ -29,7 +29,7 @@
           </ul>
         </nav>
       </header>
-      <main><form action="thirdTap.html">
+      <main><form action="thirdTap.html"  onsubmit="inserirDados2()">
         <label for="linkedin" class="labelText text-style">Linkedin</label>
         <input type="text" id="linkedin" class="inputText" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
         <label for="github" class="labelText text-style">Github *</label>
@@ -38,5 +38,7 @@
         <button id="buttonTela2" class="btn"><p>Next</p><img src="/icons/chevron-right.svg" alt="chevron-right"></button>
       </form></main>
 
+      <script src="/js/inserirDados.js"></script>
+      <script src="/js/onload.js"></script>
   </body>
 </html>
