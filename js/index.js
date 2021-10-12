@@ -12,9 +12,14 @@ document.querySelector('#year').addEventListener('input', function () {
   let day = document.querySelector('#day');
   let month = document.querySelector('#month');
 
-let age_aux = getAge(`${this.value},${month.value },${day.value}`);
-if(age_aux<0){
-age_aux="Invalid Age";
-}
-  document.querySelector('#age').value = age_aux;
+  let age_aux = getAge(`${this.value},${month.value},${day.value}`);
+
+  if (age_aux < 0 || age_aux > 110) {
+    age_aux = 'Invalid Age';
+  }
+
+  console.log(isNaN(parseInt(age_aux)));
+  document.querySelector('#age').value = isNaN(parseInt(age_aux))
+    ? 'Invalid Age'
+    : age_aux;
 });
