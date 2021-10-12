@@ -1,7 +1,7 @@
 
 * {
     font-family: 'Nunito', sans-serif;
-  color: #767676;}
+  }
 .background{
   background: #ECEEF2;
   padding-top: 5%;
@@ -25,7 +25,6 @@
   font-size: 18px;
   color: #000000;
 }
-
 
 /* ############## NAVEGAÇÂO ############## */
 a {
@@ -210,6 +209,7 @@ input::-webkit-inner-spin-button {
   border: none;
   color: #ffffff;
   margin: 41px 0 0px 426px;
+  cursor: pointer;
 }
 .btn p {
   padding-left: 12px;
@@ -224,7 +224,6 @@ input::-webkit-inner-spin-button {
   width: 250px;
   height: 28px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  margin-top: 20px;
 }
    
 .inputCheckBox{
@@ -277,3 +276,12 @@ input::-webkit-inner-spin-button {
   height: 18px;
   margin: 0 11.5px 0 6px
 }
+
+.final {
+  width: 91px;
+  }
+  
+  .btn .finish {
+  height: 18px;
+  margin-right: 5px;
+  }
