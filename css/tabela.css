@@ -13,4 +13,15 @@ th, td {
     font-style: Nunito; 
     text-align: left;
     border-bottom: 1px solid #ddd;
+    width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.fourthTap{
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     width: 400px;
 }
