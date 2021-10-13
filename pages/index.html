@@ -17,12 +17,9 @@
     />
     <link rel="stylesheet" href="/css/index.css" />
     <title>First Tab</title>
-    <style type="text/css">
-      .msg-erro{ color: red; }
-    </style>
   </head>
   <body class="background">
-    <div class="background-forms" id="position">
+    <div class="background-forms d-flex align-items-center" id="position">
     <header>
       <div class="auto-layout">
           <div class="inside-auto-layout"> 
@@ -40,13 +37,13 @@
     <main>
       <form action="secondTap.html" id="forms-cadastro" >
         <label for="nome" class="labelText">Full Name *</label>
-        <input type="text" id="nome" onclick="return valida_nome(this)" class="inputText" required placeholder="Foo Bar">
-        <p id="textinho"></p>
+        <input type="text" id="nome" class="inputText" required placeholder="Foo Bar">
+        <p id="textinho-nome"></p>
     
         <label for="nickname" class="labelText">Nickname</label>
         <input type="text" id="nickname" class="inputText" placeholder="Juanito">
         <div class="box-email-phone box-input">
-          <div class="margin">
+          <div>
             <label for="input-email" class="text-style">Email *</label>
             <input
               id="input-email"
@@ -54,9 +51,7 @@
               placeholder="foo@bar.com"
               type="email"
               required
-              onclick="return valida_email(this)"
             />
-            <p id="textinho2"></p>
           </div>
           <div>
             <label for="input-phone" class="text-style">Phone</label>
@@ -68,8 +63,9 @@
               type="tel"
             />
           </div>
+          <p id="textinho-email"></p>
         </div>
-            <div class="birthday-box box-input">
+            <div class="birthday-box box-input" id="bday">
       <h3 class="text-style">Birthday *</h3>
       <div>
         <label for="day" class="text-style">Day</label>
@@ -114,6 +110,7 @@
           disabled
         />
       </div>
+      <p id="pBday"></p>
     </div>
         <div class="divCheckBox">
         <input type="checkbox" name="" id="aprove" class="inputCheckBox" required><label for="aprove" class="labelCheckBox">I accept the terms and privacy</label>
@@ -124,6 +121,6 @@
     </main>
       </div>
     <script src="/js/index.js"></script>
-    <script src="/js/validacao.js"></script>
+    <script src="/js/validacaoTela1.js"></script>
   </body>
 </html>
