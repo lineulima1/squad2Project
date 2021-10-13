@@ -45,7 +45,7 @@ function salvaDados(){
 function salvaDados1(){
 
     let dados = JSON.parse(localStorage.getItem("infosForms"))
-   
+   if(dados != null) {
     if(dados.link != null && dados.git != null){
         
         let linkedin = $id("linkedin")
@@ -55,13 +55,19 @@ function salvaDados1(){
         let github = $id("github")
         github.value = dados.git
         github.style.color= "black"
+
         
+    
     }
+   } else {
+    
+   validaDados()
+   }
 
 }
 
 function inseriDados(){
-
+    validarUrl("/pages/fourthTap.html","teamName","/pages/thirdTap.html")
     let dados = JSON.parse(localStorage.getItem("infosForms"))
 
     if(dados != null){
@@ -110,3 +116,16 @@ function inseriDados(){
     let graduationImp = document.getElementsByName("Graduation")
     graduationImp[0].textContent = graduation
 }}
+
+function validaDados(){
+    let dados = JSON.parse(localStorage.getItem("infosForms"))
+    if(dados == null) window.location.href = "/pages/index.html"
+    }
+
+function validarUrl(path,key,destiny) {
+    validaDados()
+    let dados = JSON.parse(localStorage.getItem('infosForms'))
+    if(window.location.pathname == path && dados[key] == null) window.location.href = destiny
+    
+}
+
