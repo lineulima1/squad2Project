@@ -55,7 +55,13 @@ function inserirDados3(){  // Função para salvar os dados da página 3
     let certificates = $id("certificates")
 
    let dados = JSON.parse(localStorage.getItem("infosForms"))
-if(dados.all_certificates.length < 5 && certificates.value != " "){
+console.log(dados.all_certificates)
+
+if( dados.all_certificates == null){
+    dados['all_certificates'] = []
+}
+
+if(dados['all_certificates'].length < 5 && certificates.value != " "){
    
     dados['all_certificates'].push(certificates.value)
 
