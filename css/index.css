@@ -74,7 +74,7 @@ a {
   display: flex;
   color: #767676;
   width: 100px;
-  margin: 0 0 4px 0;
+  margin: 48px 0 4px 0;
 }
 
 .inputText{
@@ -83,7 +83,6 @@ a {
   border: 2px solid #AAAAAA;
   box-sizing: border-box;
   border-radius: 4px;
-  margin: 0 0 48px 0;
   padding: 0 0 0 12px;
 }
 
@@ -118,7 +117,7 @@ a {
 
 .box-email-phone div {
   display: inline-block;
-  margin: 0px 0px 24px 0px;
+  margin: 48px 0px 24px 0px;
 }
 
 #input-email {
@@ -276,4 +275,8 @@ input::-webkit-inner-spin-button {
 .btn img {
   height: 18px;
   margin: 0 11.5px 0 6px
+}
+
+#textinho, #textinho2{
+  margin-top: 4px;
 }
