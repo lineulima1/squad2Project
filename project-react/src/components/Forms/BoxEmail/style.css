@@ -1,0 +1,18 @@
+.box-email-phone {
+  margin: 0px 0px 48px 0px;
+  width: 100%;
+  display: flex;
+}
+
+.box-email-phone div {
+  display: inline-block;
+  margin-right: 13px;
+}
+
+#input-email {
+  width: 325px;
+}
+
+#input-phone {
+  width: 162px;
+}

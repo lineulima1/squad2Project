@@ -1,0 +1,122 @@
+.box-dropDown {
+display:flex;
+flex-direction: row-reverse;
+}
+
+.input-heart {
+    font-family: 'Nunito', sans-serif;
+    color: #111;
+    background: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    width: 455px;
+    padding: 9px 12px;
+    border: none;
+  }
+  
+  #input_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+    margin: 4px 12px 11px 0;
+    border: 2px solid #aaaaaa;
+    border-radius: 4px;
+  }
+  
+  #btn_heart {
+    background-color: #fff;
+    color: #111;
+    border: none;
+  }
+  
+  #btn_heart svg {
+    height: 20px;
+  }
+
+  textarea:focus,
+  input:focus:not(.input-heart),
+  select:focus {
+    box-shadow: 0 0 0 0;
+    border: 2px solid #aaaaaa;
+    outline: 0;
+  }
+  
+  .input-heart:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+  }
+  
+  svg {
+    vertical-align: middle;
+  }
+  
+ /* .dropDown {
+   position:absolute;
+ }
+   */
+  .dropDown ul {
+    position:absolute;
+    border: 1px solid #074ee8;
+    border-radius: 5px;
+    margin-top: -8px;
+    background-color: #295ac4;
+  }
+  .dropDown ul li:first-child {
+    padding-top: 16px;
+  }
+  .dropDown ul li:last-child {
+    margin-bottom: 12px;
+  }
+   .dropDown li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 0;
+    box-shadow: inset 0px -0.5px 0px #fff;
+  }
+  .dropDown li {
+    margin: 0;
+    max-width: 40ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:#fff;
+  }
+
+ .dropDown svg {
+    vertical-align: middle;
+    height: 15px;
+  }
+
+  
+  .btn-certificate {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 0px 12px;
+    line-height: 18px;
+    width: 90px;
+    height: 40px;
+    background: #074ee8;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .btn-certificate p {
+    padding-left: 12px;
+  }
+  .btn-certificate img {
+    height: 18px;
+    width: 10px;
+    margin: 0 11.5px 0 6px;
+  } 
+
+.button-box {
+  display:flex;
+  margin-top:10px;
+  margin-bottom: 30px;
+}

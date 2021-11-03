@@ -1,0 +1,14 @@
+.background{
+  background: #ECEEF2;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.background-forms{
+  width: 550px;
+  height: 763px;
+  background: #FFFFFF;
+  border-radius: 20px; 
+  margin-left: 30%;
+  padding: 56px 50px;
+}

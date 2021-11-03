@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap%27');
+
+.title{
+    width: 755px;
+    height: 24px;
+    font-family: 'Inter', sans-serif; 
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+  }

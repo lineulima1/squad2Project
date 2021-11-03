@@ -1,0 +1,74 @@
+.navigation {
+    margin-top: 30px;
+    display: flex;
+    width: 515px;
+    height: 48px;
+    background-color: #FFFFFF;
+    margin: 20px 0px 61px 0px;
+  }
+  .navigation ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    width: 100%;
+    height: 48px;
+  }
+  .navigation li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px -2px 0px #aaaaaa;
+    width: 33.3%;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    cursor:pointer;
+  }
+
+
+  
+  .navigation .active {
+    color: #074ee8;
+    box-shadow: inset 0px -3px 0px #074ee8;
+  }
+
+table {
+    border-collapse: collapse;
+    font-size: 16px;
+	line-height: 22.5px;
+	margin: 20px auto;
+	text-align: left;
+	width: 555px;
+}
+
+th, td {
+    padding: 10px 15px;
+	  position: relative;
+    font-family: 'Nunito',sans-serif;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.title {
+  width: 755px;
+  height: 24px;
+  font-family: 'Inter',sans-serif; 
+  font-weight: 600;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #000000;
+}
+.fourthTap{
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     width: 400px;
+     max-width: 40ch;
+}
+#btn-fourth {
+  margin-top:-10px
+}
