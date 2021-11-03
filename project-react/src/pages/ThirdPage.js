@@ -106,12 +106,12 @@ export const ThirdPage = ({ setShowTab3, setChange, settopnavigation }) => {
               <ul>
                 {open && (heartfull.map((certificate) => {
                   return (
-                    <li>{certificate}<Heart color="red" fill="red"/></li>
+                    <li><Heart color="red" fill="red"/>{certificate}</li>
                   )
                 }))}
                   {open && heartless.map((certificate) => {
                   return (
-                    <li>{certificate}</li>
+                    <li><Heart color="grey" fill="white" />{certificate}</li>
                   )
                 })}
               </ul>

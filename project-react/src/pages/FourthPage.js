@@ -106,7 +106,7 @@ export const FourthPage = ({
                 <tr>
                   <td>Cerficate:</td>
                   <td className="fourthTap">
-                    {certificate} <Heart color="red" fill="red" />
+                  <Heart color="red" fill="red" /> {certificate} 
                   </td>
                 </tr>
               )
@@ -116,7 +116,9 @@ export const FourthPage = ({
               return (
                 <tr>
                   <td>Cerficate:</td>
-                  <td className="fourthTap">{certificate}</td>
+                  <td className="fourthTap">
+                  <Heart color="red" fill="white" />{certificate}
+                  </td>
                 </tr>
               )
             })}
